@@ -1,0 +1,10 @@
+Flowchart for progress
+
+Input : transcriptome/proteome
+
+This is an optional step and preferred input is proteome
+Step 1 : predict proteome from transcriptome
+  1. Rename transcriptome
+  2. Save MAP for future analysis
+  3. Run Transdecoder
+
