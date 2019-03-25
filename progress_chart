@@ -1,6 +1,8 @@
 Flowchart for progress
 
-Input : predicted proteome
+Input : transcriptome / predicted proteome
+
+If the input is a transcriptome, then translate using Transdecoder.
 
 Step 1
 Proteinortho for orthology analysis
