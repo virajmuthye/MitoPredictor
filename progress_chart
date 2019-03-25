@@ -1,10 +1,20 @@
 Flowchart for progress
 
-Input : transcriptome/proteome
+Input : predicted proteome
 
-This is an optional step and preferred input is proteome
-Step 1 : predict proteome from transcriptome
-  1. Rename transcriptome
-  2. Save MAP for future analysis
-  3. Run Transdecoder
+Step 1
+Proteinortho for orthology analysis
+
+Step 2
+Prediction of MTS by MitoFates
+
+Step 3
+Identifying mitochondrial proteins by protein domains
+
+Step 4 
+Integrate results and make Matrix
+
+Step 5
+Make R Shiny APP for using the matrix from step 4
+
 
