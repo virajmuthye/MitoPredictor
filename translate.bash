@@ -4,6 +4,7 @@
 #we keep both maps for future use:
 #map1- original transcript name, tspt
 #map2- map between transcript and predicted protein 
+
 for file in *.fasta;do
 	awk '/^>/{print ">tspt" ++i; next}{print}' < $file > "$file".renamed.pep
 	grep ">" $file   | sed 's/>//g' > del1
@@ -21,11 +22,13 @@ done
 
 #rename predicted protein set
 for file in *.transdecoder.pep;do
-	awk '/^>/{print ">tspt" ++i; next}{print}' < $file > query.fasta
+	awk '/^>/{print ">tspt" ++i; next}{print}' < $file > query.pep
 	grep ">" $file   	   | sed 's/>//g' > del1
 	grep ">" query.fasta   | sed 's/>//g' > del2
 	paste -d, del1 del2 > transcript_protein.MAP
 	rm del1
 	rm del2
 done
+
 #the predicted protein set will be in query.fasta
+
