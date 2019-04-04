@@ -1,16 +1,16 @@
 Files in this folder:
+
 1] .dom files
-These are dom files which contain the following
-domain id, #mitochondrial proteins with domain, #non-mitochondrial proteins with domain, dscore[#mitochondrial proteins with domain\ #total proteins with domain]
-Third column is an indicator for how mitochondria-specific the domain is; for eg, higher the value, more mitochondrial proteins have that domain than non-mitochondrial. 1: found only in 
-mitochondrial proteins, 0: found only in non-mitochondrial protein 
+These are dom files which contain the following columns
+domain id, #mitochondrial proteins with domain, #non-mitochondrial proteins with domain, dscore
+dscore = [#mitochondrial proteins with domain\ #total proteins with domain]
+dscore is an indicator for how mitochondria-specific the domain is; for eg, higher the value, more mitochondrial proteins have that domain than non-mitochondrial. 1: found only in mitochondrial proteins, 0: found only in non-mitochondrial protein. Value for dscore ranges between 0 and 1. 
 
 2] .pfam files
 PFAM results of all reference proteomes : hsap, mmus, cele, dmel and scer
-PFAM libraries should be downloaded
+PFAM libraries should be downloaded.
 
-3] scripts
-
+3] Scripts
 identify.bash
  Uses pfam_scan.pl to identify domains in the query proteome
  output : query.pfam
@@ -25,5 +25,6 @@ scan.bash
 
 make_matrix.bash
  Makes the final domain matrix and saves it as "domain_final.matrix"
- columns are "protein id, domain combination, contains mito-specific domain?"
+ columns are "protein id, domain combination, contains mito-specific domain [Y/N]"
+
 
