@@ -10,6 +10,7 @@ done
 
 wait
 
-cat *.filtered | sort | uniq -c | awk '$1>2 {print $2}' > mito_domains
+cat hsap.dom.filtered mmus.dom.filtered cele.dom.filtered dmel.dom.filtered | sort | uniq -c | awk '$1>2 {print $2}' > mito_domains
 
 rm *filtered
+
