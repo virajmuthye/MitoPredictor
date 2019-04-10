@@ -1,0 +1,2 @@
+cd domain
+./domain.bash

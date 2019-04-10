@@ -1,0 +1,3 @@
+cd orthology
+./orthology.bash
+

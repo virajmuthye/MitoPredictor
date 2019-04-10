@@ -1,0 +1,2 @@
+cd mts
+./mts.bash

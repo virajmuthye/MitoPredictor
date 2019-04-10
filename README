@@ -1,0 +1,16 @@
+Step 1 Prep file for analysis
+  
+Step 2 Find orthologous groups using Proteinortho
+
+Step 3 Find proteins with MTS
+
+Step 4 Find proteins with mitochondria-only domains
+
+Step 5 
+	Find mitochondrial proteins in query proteome
+	Concatanate the three matrices > FINAL.MATRIX
+
+Additional steps
+Step 6 Update animal mitochondrial protein lists
+
+
