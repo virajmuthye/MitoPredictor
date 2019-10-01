@@ -1,5 +1,6 @@
 # Mitopredictor 
 A novel machine-learning tool for prediction of mt-proteins in animals
+Source code for MitoPredictor can be downloaded on GitHub https://github.com/virajmuthye/mitopredictor.github.io
 
 ## How to run Mitopredictor
 
