@@ -48,13 +48,12 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                                          br(),
                                          downloadButton(outputId = "download_data_4", label = "Download table")
                                        ),
-                                       mainPanel(
+                                       sidebarPanel(
                                          selectInput(inputId = "geneid",label="Select OG:",choices=sort(unique(col5)),multiple = FALSE),
                                          plotOutput(outputId = "plot"),
-                                         width = 8,
-                                         DT::dataTableOutput(outputId = "view")
-                                       )
-                                       
+                                         width = 8
+                                       ),
+                                       DT::dataTableOutput(outputId = "view")
                               )
                               )
                   )
@@ -93,7 +92,7 @@ server <- function(input, output) {
   
   output$plot = renderPlot({
     p <- ggplot(df_subset_4(),aes(factor(species)))
-    p + geom_bar(fill = "#e6add8") + stat_count(aes(label=..count..), vjust=-1, geom="text", position="identity") + theme_minimal()+theme(axis.text.x=element_text(size=rel(1.5)),axis.text.y=element_text(size=rel(1.5)), axis.title.x=element_text(size=rel(1.5)),axis.title.y=element_text(size=rel(1.5))) +
+    p + geom_bar(fill = "#e6add8") + stat_count(aes(label=..count..), vjust=5, geom="text", position="identity", size=10) + theme_minimal()+theme(axis.text.x=element_text(size=rel(2)),axis.text.y=element_text(size=rel(2)), axis.title.x=element_text(size=rel(1.5)),axis.title.y=element_text(size=rel(1))) +
       xlab("Species") 
   })
   

@@ -1,12 +1,19 @@
-#run this as ./step5_identify_and_concat.bash <dom cutoff used> <cutoff for mitochondrial proteins>
 mkdir concatanate
 cd concatanate
 
 #copy matrices
+cp ../prep/id_renamedid.map .
 cp ../orthology/orthology.matrix .
 cp ../orthology/query_renamed_100.pep .
 cp ../domain/domain_final.matrix .
+cp ../domain/domscore.matrix .
 cp ../mts/final_mts.matrix .
+cp ../mts/*mitofates.result .
+cp ../mts/*targetP .
+cp ../rf.R .
+cp ../all.training.csv .
+cp ../mts/query_renamed_100_Mlist.pep .
+cp ../gene.csv .
 
 #copy list of all mitochondrial proteins
 cp ../update_final_matrix/all_mito_list .
@@ -44,50 +51,56 @@ done < query_ids_del
 ##################################################################
 #mts score
 ##################################################################
-grep "qery" final_mts.matrix > query_mts_matrix_del
-grep ",M," query_mts_matrix_del | awk -F, '{print $1}' > m_matrix_list_del
-grep -v ",M," query_mts_matrix_del | awk -F, '{print $1}' > nm_matrix_list_del
+grep ">" query_renamed_100_Mlist.pep | sed 's/>//g' | sort | uniq > query_renamed_100_Mlist.pep_del
+
 
 while read p;do
 
-	if grep -w --quiet $p m_matrix_list_del
+	if grep -w --quiet $p query_renamed_100_Mlist.pep_del
 		then
-			grep -w $p query_mts_matrix_del  | awk -F, '{print 6-$3+$4}' >> mts_score_del
+			grep -w $p query_renamed_100_Mlist.pep.targetP | awk '{print $3","$4","$5","$6","$7}' >> targetp_del
+			grep -w $p query_renamed_100_Mlist.pep.mitofates.result | awk -F"\t" '{print $2","$5}' >> mf_del
 		else
-			grep -w $p  query_mts_matrix_del | awk -F, '{print 0+$4}' >> mts_score_del
+			echo "0.000,0.000,0.000,0,0" >> targetp_del
+			echo "0.000,0.000" >> mf_del	
 	fi
 
 done < query_ids_del
+
+sed -i 's/,S/,0/g' targetp_del
+sed -i 's/,C/,0/g' targetp_del
+sed -i 's/,_/,0/g' targetp_del
+sed -i 's/,M/,1/g' targetp_del
 
 ##################################################################
 #domain score
 ##################################################################
-# need the cut-off used for domain analysis
-grep ",mito_dom" domain_final.matrix | awk -F, '{print $1}' | sort | uniq > dom_list_del
-
 while read p;do
-	if grep -w --quiet $p dom_list_del
+	if grep -w --quiet $p domscore.matrix
 		then
-			echo $1 >> domain_score_del
+			grep -w $p domscore.matrix | awk -F, '{print $2}' | bc -l | xargs printf "%.3f\n" >> domain_score_del
 		else
-			echo "0" >> domain_score_del
+			echo "0.000" >> domain_score_del
 	fi
 done < query_ids_del
 
 ##################################################################
-#find overall mitoscore
+#make matrix
 ##################################################################
-paste -d, query_ids_del ortho_score_del mts_score_del domain_score_del > mito_score_matrix_del
-while read p;do
-	grep -w $p mito_score_matrix_del | awk -F, '{print $2+$3+$4}' >> total_score_del
-done < query_ids_del
-
-paste -d, mito_score_matrix_del total_score_del > mito_score_matrix_del_2
-echo "pid,orthoscore,mtsscore,domainscore,totalscore" > header_mito_del
-cat header_mito_del mito_score_matrix_del_2 > mito_score_matrix
+paste -d, query_ids_del ortho_score_del targetp_del mf_del domain_score_del > mito_score_matrix_del
+echo "pid,orthoscore,mtp,stp,other,pred,rc,mfprob,charge,domainscore" > header_mito_del
+cat header_mito_del mito_score_matrix_del > mito_score_matrix_temp
 rm *_del
 
-awk -F, -v a=$2 '$5>=a {print $1}' mito_score_matrix | grep -v "pid" > query.mito.list
+awk -F, '{print $1","$9","$2","$8","$10","$3","$4","$5","$6","$7}' mito_score_matrix_temp > mito_score_matrix
+
+rm mito_score_matrix_temp
+
+Rscript rf.R
+
+sed -i 's/"//g' rf.csv 
+
+awk -F, '$12==1 {print $2}' rf.csv | sort | uniq > query.mito.list 
 
 cat all_mito_list query.mito.list > all_mito_list_updated
 
@@ -112,8 +125,10 @@ while read p;do
 
 	if grep -w --quiet $p orthology.matrix
 		then
+			echo "og" >> og2_del
 			grep -w $p orthology.matrix | awk -F, '{print $1","$3}' >> og_del
 		else 
+			echo "no_og" >> og2_del
 			echo "no_og,no_og" >> og_del
 	fi
 
@@ -131,25 +146,46 @@ while read p;do
 			echo "no_mts" >> mts_del
 	fi
 
+	if grep -w --quiet $p id_renamedid.map
+		then
+			grep -w $p id_renamedid.map | cut -d, -f1 >> mapcsv_2_del
+		else 
+			echo "nd" >> mapcsv_2_del
+	fi
 
 done < all_del
 
-paste -d, all_del mito_del og_del mts_del domain_del > FINAL.MATRIX_almost_del
+paste -d, all_del mapcsv_2_del mito_del og2_del og_del mts_del domain_del > FINAL.MATRIX_almost_del
+
 awk -F, '{print $1}' FINAL.MATRIX_almost_del | sed 's/[0-9]//g' > species_del
+
 paste -d, species_del FINAL.MATRIX_almost_del > FINAL.MATRIX_del
-echo "species,pid,mito,og,geneid,tp,rc,mfprob,mf,mtslen,domcomb,mitodom" >> header_del
+
+echo "species,pid,id,mito,og_present,og,geneid,tp,rc,mfprob,mf,mtslen,domcomb" >> header_del
+
 cat header_del FINAL.MATRIX_del > FINAL.MATRIX
+
 sed -i 's/ /_/g' FINAL.MATRIX
-cp FINAL.MATRIX ../.
-cp mito_score_matrix ../.
+
 rm *_del
 
 
+##################################################################
 
-  
+awk -F, '{print $1}' gene.csv > gene_temp1_del
 
+while read p;do
+	grep -w $p FINAL.MATRIX | awk -F, '{print $5}' >> gene_temp2_del
+done < gene_temp1_del
 
+paste -d, gene.csv gene_temp2_del > gene.map.csv_del
 
+echo "renamed_proteinid,proteinid,og_number" > gene_header_del
 
+cat gene_header_del gene.map.csv_del > gene.map.csv
 
-
+cp FINAL.MATRIX ../.
+cp mito_score_matrix ../.
+cp rf.csv ../.
+cp gene.map.csv ../.
+rm *_del

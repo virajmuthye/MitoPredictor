@@ -2,6 +2,7 @@ cd prep
 rm *.fasta
 rm renamed.pep
 rm query*
+rm id_renamedid.map
 cd ..
 
 cd orthology
@@ -17,8 +18,10 @@ cd ..
 
 cd domain
 rm domain_final.matrix
+rm domscore.matrix
 rm query*
-rm *mito_prot
 cd ..
 
 rm -rf concatanate
+rm -rf stats
+

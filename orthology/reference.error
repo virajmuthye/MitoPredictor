@@ -1,0 +1,203 @@
+ 
+   Module name: ncbi-blast Version: 2.4.0+ 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
+      Download:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
+          Help: Documentation can be found online at
+https://www.ncbi.nlm.nih.gov/books/NBK279690/. Other documentation is installed
+to /opt/rit/app/ncbi-blast/2.4.0+/doc 
+         Notes: The Basic Local Alignment Search Tool (BLAST) finds regions of
+local similarity between sequences. The program compares nucleotide or protein
+sequences to sequence databases and calculates the statistical significance of
+matches. BLAST can be used to infer functional and evolutionary relationships
+between sequences as well as help identify members of gene families. 
+ 
+ 
+   Module name: tcl Version: 8.6.6 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: https://www.tcl.tk/ 
+      Download: https://www.tcl.tk/software/tcltk/download.html 
+          Help: man tcl 
+         Notes: Tcl (Tool Command Language) is a very powerful but easy to
+learn dynamic programming language 
+ 
+ 
+   Module name: mariadb Version: 10.3.0 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: http://mariadb.org/ 
+      Download: https://github.com/MariaDB/server/releases 
+          Help: Documentation is online at
+https://mariadb.com/kb/en/mariadb/documentation/ 
+         Notes: MariaDB turns data into structured information in a wide array
+of applications, ranging from banking to websites. It is an enhanced, drop-in
+replacement for MySQL. 
+ 
+ 
+   Module name: expat Version: 2.2.0 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: https://libexpat.github.io/ 
+      Download: https://sourceforge.net/projects/expat/files/?source=navbar 
+          Help: Documentation is online at https://libexpat.github.io/doc/, or
+man xmlwf 
+         Notes: A stream-oriented XML parser library written in C. 
+ 
+ 
+   Module name: graphviz Version: 2.40.1 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: http://www.graphviz.org/ 
+      Download: http://www.graphviz.org/Download_source.php 
+          Help: Documentation is available online at
+http://www.graphviz.org/Documentation.php 
+         Notes: Graphviz is open source graph visualization software. 
+ 
+ 
+   Module name: mxnet Version: 0.11.0 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: https://mxnet.incubator.apache.org/ 
+      Download: https://mxnet.incubator.apache.org/get_started/install.html 
+          Help: Tutorials can be found at
+https://github.com/apache/incubator-mxnet/tree/0.11.0/example 
+         Notes: MXNet is a deep learning framework designed for both efficiency
+and flexibility. It allows you to mix symbolic and imperative programming to
+maximize efficiency and productivity. At its core, MXNet contains a dynamic
+dependency scheduler that automatically parallelizes both symbolic and
+imperative operations on the fly. MXNet is portable and lightweight, scaling
+effectively to multiple GPUs and multiple machines. 
+ 
+
+The following have been reloaded with a version change:
+  1) perl/5.26.2-skslql7 => perl/5.24.1
+
+ 
+   Module name: ncbi-blast Version: 2.4.0+ 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
+      Download:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
+          Help: Documentation can be found online at
+https://www.ncbi.nlm.nih.gov/books/NBK279690/. Other documentation is installed
+to /opt/rit/app/ncbi-blast/2.4.0+/doc 
+         Notes: The Basic Local Alignment Search Tool (BLAST) finds regions of
+local similarity between sequences. The program compares nucleotide or protein
+sequences to sequence databases and calculates the statistical significance of
+matches. BLAST can be used to infer functional and evolutionary relationships
+between sequences as well as help identify members of gene families. 
+ 
+
+The following have been reloaded with a version change:
+  1) perl/5.24.1 => perl/5.26.2-skslql7
+
+ 
+   Module name: tcl Version: 8.6.6 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: https://www.tcl.tk/ 
+      Download: https://www.tcl.tk/software/tcltk/download.html 
+          Help: man tcl 
+         Notes: Tcl (Tool Command Language) is a very powerful but easy to
+learn dynamic programming language 
+ 
+ 
+   Module name: mariadb Version: 10.3.0 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: http://mariadb.org/ 
+      Download: https://github.com/MariaDB/server/releases 
+          Help: Documentation is online at
+https://mariadb.com/kb/en/mariadb/documentation/ 
+         Notes: MariaDB turns data into structured information in a wide array
+of applications, ranging from banking to websites. It is an enhanced, drop-in
+replacement for MySQL. 
+ 
+ 
+   Module name: expat Version: 2.2.0 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: https://libexpat.github.io/ 
+      Download: https://sourceforge.net/projects/expat/files/?source=navbar 
+          Help: Documentation is online at https://libexpat.github.io/doc/, or
+man xmlwf 
+         Notes: A stream-oriented XML parser library written in C. 
+ 
+ 
+   Module name: graphviz Version: 2.40.1 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: http://www.graphviz.org/ 
+      Download: http://www.graphviz.org/Download_source.php 
+          Help: Documentation is available online at
+http://www.graphviz.org/Documentation.php 
+         Notes: Graphviz is open source graph visualization software. 
+ 
+ 
+   Module name: mxnet Version: 0.11.0 
+ 
+       Contact: researchit@iastate.edu 
+      Homepage: https://mxnet.incubator.apache.org/ 
+      Download: https://mxnet.incubator.apache.org/get_started/install.html 
+          Help: Tutorials can be found at
+https://github.com/apache/incubator-mxnet/tree/0.11.0/example 
+         Notes: MXNet is a deep learning framework designed for both efficiency
+and flexibility. It allows you to mix symbolic and imperative programming to
+maximize efficiency and productivity. At its core, MXNet contains a dynamic
+dependency scheduler that automatically parallelizes both symbolic and
+imperative operations on the fly. MXNet is portable and lightweight, scaling
+effectively to multiple GPUs and multiple machines. 
+ 
+
+The following have been reloaded with a version change:
+  1) bzip2/1.0.6-mccjwgx => bzip2/1.0.6-qrd3gzl
+  2) ncurses/6.0-pluwdjw => ncurses/6.0-3ncf3bb
+  3) openssl/1.0.2n-avp4gn5 => openssl/1.0.2n-ycmyhhj
+  4) zlib/1.2.11-ldu43ta => zlib/1.2.11-vhzh5cf
+
+*****************************************************************
+Proteinortho with PoFF version 5.16b - An orthology detection tool
+*****************************************************************
+Detected 16 available CPU threads, Detected NCBI BLAST version 2.4.0+
+Checking input files
+Checking query_renamed_100.pep... ok
+Checking renamed.cele.pep... ok
+Checking renamed.dmel.pep... ok
+Checking renamed.hsap.pep... ok
+Checking renamed.mmus.pep... ok
+Checking renamed.yeast.pep... ok
+
+**Step 1**
+Generating indices
+Building database for 'renamed.cele.pep'	(28318 sequences)
+Building database for 'renamed.mmus.pep'	(22317 sequences)
+Building database for 'renamed.hsap.pep'	(21053 sequences)
+Building database for 'query_renamed_100.pep'	(16008 sequences)
+Building database for 'renamed.dmel.pep'	(13781 sequences)
+Building database for 'renamed.yeast.pep'	(5917 sequences)
+
+**Step 2**
+                                                                               Running blast analysis: 0% (0/15)                                                                               Running blast analysis: 26.66% (4/15)                                                                               Running blast analysis: 93.33% (14/15)                                                                               Running blast analysis: 33.33% (5/15)                                                                               Running blast analysis: 80% (12/15)                                                                               Running blast analysis: 53.33% (8/15)                                                                               Running blast analysis: 86.66% (13/15)                                                                               Running blast analysis: 100% (15/15)                                                                               Running blast analysis: 73.33% (11/15)                                                                               Running blast analysis: 60% (9/15)                                                                               Running blast analysis: 20% (3/15)                                                                               Running blast analysis: 13.33% (2/15)                                                                               Running blast analysis: 46.66% (7/15)                                                                               Running blast analysis: 6.66% (1/15)                                                                               Running blast analysis: 40% (6/15)                                                                               Running blast analysis: 66.66% (10/15)                                                                               Running blast analysis: 100% (15/15)
+[OUTPUT] -> written to mito.blast-graph
+
+**Step 3**
+Clustering by similarity (Proteinortho mode)
+Reading mito.blast-graph
+6 species
+55670 paired proteins
+79196 bidirectional edges
+                          Clustering: 0.00%                          Clustering: 0.01%                          Clustering: 0.01%                          Clustering: 0.02%                          Clustering: 0.02%                          Clustering: 0.02%                          Clustering: 0.03%                          Clustering: 0.03%                          Clustering: 0.03%                          Clustering: 0.04%                          Clustering: 0.04%                          Clustering: 0.04%                          Clustering: 0.05%                          Clustering: 0.05%                          Clustering: 0.05%                          Clustering: 0.06%                          Clustering: 0.06%                          Clustering: 0.06%                          Clustering: 0.07%                          Clustering: 0.07%                          Clustering: 0.07%                          Clustering: 0.08%                          Clustering: 0.08%                          Clustering: 0.08%                          Clustering: 0.09%                          Clustering: 0.09%                          Clustering: 0.10%                          Clustering: 0.10%                          Clustering: 0.10%                          Clustering: 0.11%                          Clustering: 0.11%                          Clustering: 0.11%                          Clustering: 0.12%                          Clustering: 0.12%                          Clustering: 0.13%                          Clustering: 0.13%                          Clustering: 0.13%                          Clustering: 0.14%                          Clustering: 0.14%                          Clustering: 0.14%                          Clustering: 0.15%                          Clustering: 0.15%                          Clustering: 0.15%                          Clustering: 0.16%                          Clustering: 0.16%                          Clustering: 0.16%                          Clustering: 0.17%                          Clustering: 0.17%                          Clustering: 0.17%                          Clustering: 0.18%                          Clustering: 0.18%                          Clustering: 0.18%                          Clustering: 0.19%                          Clustering: 0.19%                          Clustering: 0.20%                          Clustering: 0.20%                          Clustering: 0.20%                          Clustering: 0.21%                          Clustering: 0.21%                          Clustering: 0.21%                          Clustering: 0.22%                          Clustering: 0.22%                          Clustering: 0.22%                          Clustering: 0.23%                          Clustering: 0.23%                          Clustering: 0.24%                          Clustering: 0.24%                          Clustering: 0.24%                          Clustering: 0.25%                          Clustering: 0.25%                          Clustering: 0.25%                          Clustering: 0.26%                          Clustering: 0.26%                          Clustering: 0.26%                          Clustering: 0.27%                          Clustering: 0.27%                          Clustering: 0.28%                          Clustering: 0.28%                          Clustering: 0.29%                          Clustering: 0.29%                          Clustering: 0.29%                          Clustering: 0.30%                          Clustering: 0.30%                          Clustering: 0.31%                          Clustering: 0.31%                          Clustering: 0.32%                          Clustering: 0.32%                          Clustering: 0.33%                          Clustering: 0.33%                          Clustering: 0.33%                          Clustering: 0.34%                          Clustering: 0.34%                          Clustering: 0.35%                          Clustering: 0.35%                          Clustering: 0.35%                          Clustering: 0.36%                          Clustering: 0.36%                          Clustering: 0.37%                          Clustering: 0.37%                          Clustering: 0.38%                          Clustering: 0.39%                          Clustering: 0.39%                          Clustering: 0.40%                          Clustering: 0.41%                          Clustering: 0.41%                          Clustering: 0.42%                          Clustering: 0.43%                          Clustering: 0.43%                          Clustering: 0.44%                          Clustering: 0.44%                          Clustering: 0.45%                          Clustering: 0.46%                          Clustering: 0.46%                          Clustering: 0.47%                          Clustering: 0.48%                          Clustering: 0.49%                          Clustering: 0.49%                          Clustering: 0.50%                          Clustering: 0.51%                          Clustering: 0.52%                          Clustering: 0.52%                          Clustering: 0.53%                          Clustering: 0.54%                          Clustering: 0.55%                          Clustering: 0.56%                          Clustering: 0.57%                          Clustering: 0.57%                          Clustering: 0.58%                          Clustering: 0.59%                          Clustering: 0.59%                          Clustering: 0.60%                          Clustering: 0.61%                          Clustering: 0.62%                          Clustering: 0.62%                          Clustering: 0.63%                          Clustering: 0.64%                          Clustering: 0.65%                          Clustering: 0.66%                          Clustering: 0.66%                          Clustering: 0.67%                          Clustering: 0.68%                          Clustering: 0.69%                          Clustering: 0.70%                          Clustering: 0.70%                          Clustering: 0.71%                          Clustering: 0.72%                          Clustering: 0.73%                          Clustering: 0.74%                          Clustering: 0.75%                          Clustering: 0.76%                          Clustering: 0.77%                          Clustering: 0.78%                          Clustering: 0.79%                          Clustering: 0.80%                          Clustering: 0.82%                          Clustering: 0.82%                          Clustering: 0.84%                          Clustering: 0.85%                          Clustering: 0.86%                          Clustering: 0.87%                          Clustering: 0.88%                          Clustering: 0.89%                          Clustering: 0.90%                          Clustering: 0.91%                          Clustering: 0.93%                          Clustering: 0.94%                          Clustering: 0.95%                          Clustering: 0.96%                          Clustering: 0.98%                          Clustering: 0.99%                          Clustering: 1.00%                          Clustering: 1.01%                          Clustering: 1.02%                          Clustering: 1.03%                          Clustering: 1.04%                          Clustering: 1.05%                          Clustering: 1.07%                          Clustering: 1.08%                          Clustering: 1.09%                          Clustering: 1.10%                          Clustering: 1.12%                          Clustering: 1.13%                          Clustering: 1.15%                          Clustering: 1.16%                          Clustering: 1.17%                          Clustering: 1.19%                          Clustering: 1.20%                          Clustering: 1.21%                          Clustering: 1.23%                          Clustering: 1.24%                          Clustering: 1.26%                          Clustering: 1.27%                          Clustering: 1.29%                          Clustering: 1.30%                          Clustering: 1.32%                          Clustering: 1.33%                          Clustering: 1.35%                          Clustering: 1.36%                          Clustering: 1.38%                          Clustering: 1.39%                          Clustering: 1.40%                          Clustering: 1.42%                          Clustering: 1.44%                          Clustering: 1.46%                          Clustering: 1.47%                          Clustering: 1.49%                          Clustering: 1.51%                          Clustering: 1.53%                          Clustering: 1.54%                          Clustering: 1.56%                          Clustering: 1.57%                          Clustering: 1.59%                          Clustering: 1.61%                          Clustering: 1.62%                          Clustering: 1.64%                          Clustering: 1.66%                          Clustering: 1.68%                          Clustering: 1.70%                          Clustering: 1.72%                          Clustering: 1.74%                          Clustering: 1.76%                          Clustering: 1.78%                          Clustering: 1.80%                          Clustering: 1.82%                          Clustering: 1.84%                          Clustering: 1.86%                          Clustering: 1.88%                          Clustering: 1.90%                          Clustering: 1.92%                          Clustering: 1.95%                          Clustering: 1.97%                          Clustering: 1.99%                          Clustering: 2.01%                          Clustering: 2.04%                          Clustering: 2.06%                          Clustering: 2.08%                          Clustering: 2.11%                          Clustering: 2.13%                          Clustering: 2.15%                          Clustering: 2.18%                          Clustering: 2.20%                          Clustering: 2.23%                          Clustering: 2.25%                          Clustering: 2.27%                          Clustering: 2.30%                          Clustering: 2.32%                          Clustering: 2.35%                          Clustering: 2.37%                          Clustering: 2.40%                          Clustering: 2.43%                          Clustering: 2.45%                          Clustering: 2.48%                          Clustering: 2.51%                          Clustering: 2.53%                          Clustering: 2.56%                          Clustering: 2.59%                          Clustering: 2.62%                          Clustering: 2.64%                          Clustering: 2.67%                          Clustering: 2.70%                          Clustering: 2.73%                          Clustering: 2.76%                          Clustering: 2.79%                          Clustering: 2.82%                          Clustering: 2.85%                          Clustering: 2.88%                          Clustering: 2.91%                          Clustering: 2.94%                          Clustering: 2.98%                          Clustering: 3.01%                          Clustering: 3.04%                          Clustering: 3.07%                          Clustering: 3.10%                          Clustering: 3.13%                          Clustering: 3.17%                          Clustering: 3.20%                          Clustering: 3.24%                          Clustering: 3.27%                          Clustering: 3.31%                          Clustering: 3.34%                          Clustering: 3.38%                          Clustering: 3.42%                          Clustering: 3.45%                          Clustering: 3.49%                          Clustering: 3.53%                          Clustering: 3.56%                          Clustering: 3.60%                          Clustering: 3.64%                          Clustering: 3.68%                          Clustering: 3.72%                          Clustering: 3.76%                          Clustering: 3.80%                          Clustering: 3.84%                          Clustering: 3.88%                          Clustering: 3.92%                          Clustering: 3.96%                          Clustering: 4.00%                          Clustering: 4.05%                          Clustering: 4.09%                          Clustering: 4.13%                          Clustering: 4.17%                          Clustering: 4.22%                          Clustering: 4.26%                          Clustering: 4.31%                          Clustering: 4.35%                          Clustering: 4.40%                          Clustering: 4.45%                          Clustering: 4.49%                          Clustering: 4.54%                          Clustering: 4.58%                          Clustering: 4.63%                          Clustering: 4.68%                          Clustering: 4.73%                          Clustering: 4.78%                          Clustering: 4.83%                          Clustering: 4.88%                          Clustering: 4.93%                          Clustering: 4.98%                          Clustering: 5.03%                          Clustering: 5.09%                          Clustering: 5.14%                          Clustering: 5.19%                          Clustering: 5.25%                          Clustering: 5.30%                          Clustering: 5.35%                          Clustering: 5.41%                          Clustering: 5.47%                          Clustering: 5.52%                          Clustering: 5.58%                          Clustering: 5.64%                          Clustering: 5.70%                          Clustering: 5.76%                          Clustering: 5.81%                          Clustering: 5.88%                          Clustering: 5.94%                          Clustering: 6.00%                          Clustering: 6.06%                          Clustering: 6.12%                          Clustering: 6.21%                          Clustering: 6.27%                          Clustering: 6.35%                          Clustering: 6.41%                          Clustering: 6.48%                          Clustering: 6.55%                          Clustering: 6.63%                          Clustering: 6.70%                          Clustering: 6.77%                          Clustering: 6.85%                          Clustering: 6.92%                          Clustering: 7.01%                          Clustering: 7.08%                          Clustering: 7.15%                          Clustering: 7.23%                          Clustering: 7.31%                          Clustering: 7.39%                          Clustering: 7.47%                          Clustering: 7.54%                          Clustering: 7.62%                          Clustering: 7.71%                          Clustering: 7.79%                          Clustering: 7.87%                          Clustering: 7.95%                          Clustering: 8.06%                          Clustering: 8.14%                          Clustering: 8.23%                          Clustering: 8.31%                          Clustering: 8.40%                          Clustering: 8.49%                          Clustering: 8.57%                          Clustering: 8.68%                          Clustering: 8.77%                          Clustering: 8.89%                          Clustering: 8.99%                          Clustering: 9.09%                          Clustering: 9.19%                          Clustering: 9.30%                          Clustering: 9.40%                          Clustering: 9.50%                          Clustering: 9.60%                          Clustering: 9.73%                          Clustering: 9.86%                          Clustering: 9.97%                          Clustering: 10.07%                          Clustering: 10.20%                          Clustering: 10.31%                          Clustering: 10.45%                          Clustering: 10.56%                          Clustering: 10.67%                          Clustering: 10.78%                          Clustering: 10.89%                          Clustering: 11.01%                          Clustering: 11.13%                          Clustering: 11.26%                          Clustering: 11.38%                          Clustering: 11.50%                          Clustering: 11.62%                          Clustering: 11.75%                          Clustering: 11.87%                          Clustering: 12.01%                          Clustering: 12.15%                          Clustering: 12.28%                          Clustering: 12.44%                          Clustering: 12.56%                          Clustering: 12.70%                          Clustering: 12.83%                          Clustering: 12.97%                          Clustering: 13.12%                          Clustering: 13.29%                          Clustering: 13.50%                          Clustering: 13.65%                          Clustering: 13.80%                          Clustering: 14.05%                          Clustering: 14.20%                          Clustering: 14.39%                          Clustering: 14.58%                          Clustering: 14.73%                          Clustering: 14.91%                          Clustering: 15.08%                          Clustering: 15.26%                          Clustering: 15.42%                          Clustering: 15.59%                          Clustering: 15.76%                          Clustering: 15.98%                          Clustering: 16.22%                          Clustering: 16.39%                          Clustering: 16.58%                          Clustering: 16.81%                          Clustering: 17.06%                          Clustering: 17.24%                          Clustering: 17.50%                          Clustering: 17.71%                          Clustering: 17.92%                          Clustering: 18.14%                          Clustering: 18.37%                          Clustering: 18.67%                          Clustering: 18.96%                          Clustering: 19.16%                          Clustering: 19.36%                          Clustering: 19.56%                          Clustering: 19.78%                          Clustering: 20.02%                          Clustering: 20.23%                          Clustering: 20.46%                          Clustering: 20.67%                          Clustering: 20.88%                          Clustering: 21.09%                          Clustering: 21.30%                          Clustering: 21.52%                          Clustering: 21.74%                          Clustering: 21.96%                          Clustering: 22.18%                          Clustering: 22.41%                          Clustering: 22.64%                          Clustering: 22.87%                          Clustering: 23.10%                          Clustering: 23.34%                          Clustering: 23.57%                          Clustering: 23.81%                          Clustering: 24.05%                          Clustering: 24.29%                          Clustering: 24.54%                          Clustering: 24.79%                          Clustering: 25.03%                          Clustering: 25.28%                          Clustering: 25.54%                          Clustering: 25.80%                          Clustering: 26.06%                          Clustering: 26.32%                          Clustering: 26.59%                          Clustering: 26.86%                          Clustering: 27.13%                          Clustering: 27.41%                          Clustering: 27.68%                          Clustering: 27.96%                          Clustering: 28.25%                          Clustering: 28.54%                          Clustering: 28.82%                          Clustering: 29.11%                          Clustering: 29.41%                          Clustering: 29.71%                          Clustering: 30.01%                          Clustering: 30.32%                          Clustering: 30.62%                          Clustering: 30.93%                          Clustering: 31.24%                          Clustering: 31.56%                          Clustering: 31.88%                          Clustering: 32.21%                          Clustering: 32.54%                          Clustering: 32.87%                          Clustering: 33.20%                          Clustering: 33.56%                          Clustering: 33.90%                          Clustering: 34.24%                          Clustering: 34.60%                          Clustering: 34.95%                          Clustering: 35.34%                          Clustering: 35.71%                          Clustering: 36.08%                          Clustering: 36.48%                          Clustering: 36.85%                          Clustering: 37.24%                          Clustering: 37.64%                          Clustering: 38.04%                          Clustering: 38.43%                          Clustering: 38.82%                          Clustering: 39.22%                          Clustering: 39.62%                          Clustering: 40.03%                          Clustering: 40.43%                          Clustering: 40.85%                          Clustering: 41.27%                          Clustering: 41.68%                          Clustering: 42.11%                          Clustering: 42.55%                          Clustering: 42.97%                          Clustering: 43.41%                          Clustering: 43.84%                          Clustering: 44.28%                          Clustering: 44.73%                          Clustering: 45.18%                          Clustering: 45.63%                          Clustering: 46.10%                          Clustering: 46.56%                          Clustering: 47.03%                          Clustering: 47.50%                          Clustering: 47.98%                          Clustering: 48.47%                          Clustering: 48.95%                          Clustering: 49.46%                          Clustering: 49.95%                          Clustering: 50.47%                          Clustering: 50.98%                          Clustering: 51.49%                          Clustering: 52.01%                          Clustering: 52.54%                          Clustering: 53.10%                          Clustering: 53.66%                          Clustering: 54.22%                          Clustering: 54.78%                          Clustering: 55.34%                          Clustering: 55.90%                          Clustering: 56.47%                          Clustering: 57.04%                          Clustering: 57.61%                          Clustering: 58.19%                          Clustering: 58.77%                          Clustering: 59.36%                          Clustering: 59.96%                          Clustering: 60.56%                          Clustering: 61.18%                          Clustering: 61.79%                          Clustering: 62.42%                          Clustering: 63.07%                          Clustering: 63.70%                          Clustering: 64.34%                          Clustering: 64.98%                          Clustering: 65.63%                          Clustering: 66.29%                          Clustering: 66.96%                          Clustering: 67.63%                          Clustering: 68.31%                          Clustering: 68.99%                          Clustering: 69.69%                          Clustering: 70.38%                          Clustering: 71.09%                          Clustering: 71.80%                          Clustering: 72.52%                          Clustering: 73.24%                          Clustering: 73.98%                          Clustering: 74.72%                          Clustering: 75.47%                          Clustering: 76.22%                          Clustering: 76.99%                          Clustering: 77.76%                          Clustering: 78.54%                          Clustering: 79.33%                          Clustering: 80.12%                          Clustering: 80.93%                          Clustering: 81.74%                          Clustering: 82.56%                          Clustering: 83.39%                          Clustering: 84.23%                          Clustering: 85.07%                          Clustering: 85.93%                          Clustering: 86.79%                          Clustering: 87.66%                          Clustering: 88.53%                          Clustering: 89.42%                          Clustering: 90.32%                          Clustering: 91.23%                          Clustering: 92.14%                          Clustering: 93.06%                          Clustering: 94.00%                          Clustering: 94.95%                          Clustering: 95.90%                          Clustering: 96.86%                          Clustering: 97.83%                          Clustering: 98.81%                          Clustering: 99.80%Done                       
+[OUTPUT] -> written to mito.proteinortho
+Writing graph...
+Cleaning edge list...
+Removed 5881 / 79196 edges
+Done.
+[OUTPUT] -> written to mito.proteinortho-graph
+
+All finished.

@@ -3,9 +3,9 @@
 grep ">" query_renamed_100_Mlist.pep | sed 's/>//g' | sort | uniq > id_del
 
 while read p;do
-	grep -w $p query.targetP   | awk '{print $6","$7}' >> 1_del
-	grep -w $p query.mitofates | awk -F"\t" '{print $2","$3}' >> 2_del
-	grep -w $p query.mitofates | awk -F"\t" '{print $4}' | awk -F"(" '{print $1}' >> 3_del
+	grep -w $p query_renamed_100_Mlist.pep.targetP   | awk '{print $6","$7}' >> 1_del
+	grep -w $p query_renamed_100_Mlist.pep.mitofates.result | awk -F"\t" '{print $2","$3}' >> 2_del
+	grep -w $p query_renamed_100_Mlist.pep.mitofates.result | awk -F"\t" '{print $4}' | awk -F"(" '{print $1}' >> 3_del
 done < id_del
 paste -d, id_del 1_del 2_del 3_del > query_mts.matrix_del
 

@@ -6,9 +6,22 @@ for file in *fasta;do
 	awk '/^>/{print ">qery" ++i; next}{print}' < $file > renamed.pep
 done
 
+#make map of original and renamed proteins
+
+for file in *fasta;do
+
+	grep ">" $file | sed 's/ /_/g' | sed 's/>//g' > file1_del
+	awk '/^>/{print ">qery" ++i; next}{print}' < $file | grep ">" | sed 's/>//g' > file2_del
+	paste -d, file1_del file2_del > id_renamedid.map
+	rm file1_del
+	rm file2_del
+
+done 
+
+
 # removes redundancy by running CD-hit
 # currently removes all proteins at 98% similarity, this can be changed by changing the -c option
-cd-hit -i renamed.pep -o renamed.pep.98 -c 0.98 -n 5
+cd-hit -i renamed.pep -o renamed.pep.98 -c 1 -n 5
 
 #takes proteins above 100 amino-acids
 cut -f1 -d" " renamed.pep.98 > "$file".pep2
